@@ -1,0 +1,95 @@
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+
+double sum, temp;
+
+
+double fahrenheit(double){
+
+	
+
+	sum=temp-32*(9/5);
+
+	cout << "Your Fahrenheit temp is: " << sum << endl;
+
+	return sum;
+
+}
+
+
+double celsius(double){
+
+	sum=temp*(5/9)+32;
+
+	cout << "Your Celsius temp is: " << sum << endl;
+
+	return sum;
+
+	
+
+	
+
+}
+
+
+int main(){
+
+
+int choice;
+
+
+	cout << "Which conversion would you like to make?: " << endl;
+
+	cout << "Fahrenheit->Celsius: 1 " << endl;
+
+	cout << "Celsius->Fahrenheit: 2 " << endl;
+
+	cin>>choice;
+
+
+	
+
+	
+
+	if (choice==1){
+
+		cout << "Please enter Fahrenheit temp: " << endl;
+
+		cin >> temp;
+
+		fahrenheit(temp);
+
+		cout << "Your temp in Celsius is: " << temp << endl;
+
+		}
+
+	else if (choice==2){
+
+		cout << "Please enter your Celsius temp: " << endl;
+
+		cin >> temp;
+
+		celsius(temp);
+
+		cout << "Your temp in Fahrenheit is: " << temp << endl;
+
+	}
+
+	else{
+
+		exit;
+
+	}
+
+
+
+
+return 0;
+
+
+}
+
